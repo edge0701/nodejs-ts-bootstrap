@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-ts-bootstrap",
+  "version": "1.0.0",
+  "description": "NodeJS Typescript Bootstrap using Gulp",
+  "main": "dist/index.js",
+  "author": "Ed Watson",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-typescript": "^4.0.1",
+    "typescript": "^2.7.2"
+  }
+}
