@@ -1,12 +1,29 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "server",
-            "type": "node",
-            "request": "launch",
-            "program": "${workspaceRoot}/dist/index.js",
-            "preLaunchTask": "build"
-        },
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/src/index.ts",
+      "outFiles": [
+        "${workspaceRoot}/dist/index.js"
+      ],
+      "sourceMaps": true,
+      "stopOnEntry": false,
+      "args": [],
+      "cwd": "${workspaceRoot}",
+      "env": {
+          "NODE_ENV": "development"
+      },
+      "console": "internalConsole",
+      "preLaunchTask": "build",
+      "name": "DEBUG"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to Process",
+      "port": 5858
+    }
+  ]
 }
