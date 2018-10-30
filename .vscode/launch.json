@@ -4,6 +4,17 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "ts-node",
+      "console": "integratedTerminal",
+      "args": [
+        "--require", "ts-node/register",
+        "--harmony-regexp-property",
+        "${workspaceFolder}/src/index.ts"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "program": "${workspaceRoot}/src/index.ts",
       "outFiles": [
         "${workspaceRoot}/dist/index.js"
